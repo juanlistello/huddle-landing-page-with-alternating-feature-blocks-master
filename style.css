@@ -12,6 +12,7 @@ a {
 body {
     line-height: 1.7rem;
     font-size: 16px;
+    
 }
 img {
     width: 100%;  
@@ -45,10 +46,13 @@ img {
     transform: scale(1.1)
 }
 .container {
+     
     padding: 2rem 2rem;
     margin: 0 auto;
 }
 .container2 {
+    max-width: 1440px; 
+    margin: 0 auto;
     padding: 2rem 1.5rem;  
 }
 /* cards */
@@ -143,24 +147,36 @@ img {
     color: white;
     margin-right: 1rem;
 
+
+}
+.contact .footer-logo img {
+    width: 200px;
 }
 
 .links ul li {
     color: white;
     list-style: none;
-}
-.footer-logo {
-    width: 180px;
+} .footer-logo {
+    width: 200px;
+    margin-bottom: 1rem;
     filter:  brightness(0) invert(1);
     
 }
 
 .contact p {
     margin: 1rem 0;
+    max-width: 400px;
 }
+
 .links ul li {
     font-size: 1.1rem;
-    margin: 1rem 0;
+    margin-bottom: 1rem;
+}
+.links2 ul li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: white;
+    list-style: none;
 }
 .social {
     text-align: center;
@@ -175,3 +191,100 @@ img {
 .social .fab:hover {
     color:hsl(322, 100%, 66%);  
 }
+
+@media (min-width: 700px){
+    .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .textcard {
+        padding: 0rem 4rem;
+    }
+    .info h2 {
+        margin: 0em;
+    }
+    .card1 {
+        flex-direction: row-reverse;
+    }
+    .card3 {
+        flex-direction: row-reverse;
+    }
+    .card img {
+    width: 30%;
+    }
+    
+    .card4 {
+        margin: 0 auto;
+        max-width: 600px;
+        
+    }
+    .card4 h2 {
+        margin-bottom: 1.5rem;
+    }
+
+}
+@media (min-width:800px) {
+    .main {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        text-align: left;
+    }
+    .links {
+        margin: 0 3rem;
+    }
+    .links2 {
+        margin: 0 2rem;
+    }
+    .main .text {
+        align-self: center;
+        max-width: 800px;
+        margin-right: 3rem;
+    }
+    .main .text a {
+        text-align: center;
+    }
+    .main img {
+        max-width: 60%;
+        height: auto;
+    }
+   
+    .navbar {
+        padding: 3rem 1rem;
+    }
+    .logo img {
+        vertical-align: middle;
+        width: 180px;
+    }
+    .navbar a {
+        font-size: 1rem;
+        padding: 0.3rem 2rem;
+    }
+    .container3 {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+    .social .fab {
+        margin: 0 0.5rem;
+    }
+    .social {
+        margin-left: 4rem;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+        text-align: left;
+    }
+
+
